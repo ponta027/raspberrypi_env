@@ -10,3 +10,4 @@ source ~/.bashrc
 
 go get github.com/motemen/gore/cmd/gore
 go get golang.org/x/tools/cmd/goimports
+go get github.com/Songmu/make2help/cmd/make2help
