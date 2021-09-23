@@ -69,6 +69,15 @@ binary が installされる。
 > chmod +x rust-analyzer-aarch64-unknown-linux-gnu
 > mv rust-analyzer-aarch64-unknown-linux-gnu ~/.local/share/vim-lsp-settings/servers/rust-analyzer/rust-analyzer
 
+## cargo build
+
+cargo build を実行すると4並列 でビルドされる。
+そのため、全てのCPUを食いつぶしてしまう。
+
+> cargo build -j 3
+
+でビルド並列度をさげる。
+
 
 
 
