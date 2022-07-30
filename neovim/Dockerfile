@@ -7,6 +7,8 @@ RUN apk update && \
     gcc \
     g++ \
     git \
+    fish \
+    bash \
     linux-headers \
     musl-dev\
     vim \
@@ -21,6 +23,10 @@ ENV LANG="ja_JP.UTF-8" LANGUAGE="ja_JP:ja" LC_ALL="ja_JP.UTF-8"
 RUN pip3 install --upgrade pip neovim && \
     rm -rf /root/.cache
 
-RUN adduser -D $user
+COPY entrypoint.sh /
+
+RUN adduser --shell /bin/bash -D $user
 WORKDIR /home/$user
-ENTRYPOINT ["nvim"]
+USER $user
+ENV SHELL=/bin/bash
+ENTRYPOINT ["/entrypoint.sh"]

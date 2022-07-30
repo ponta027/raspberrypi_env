@@ -3,7 +3,7 @@
 
 clone  neovim dot file.
 
-> git clone https://github.com/ponta027/dotfiles.git
+> git clone https://github.com/ponta027/dotfiles.git ~/git/dotfiles
 
 ## build container
 
@@ -14,4 +14,6 @@ clone  neovim dot file.
 > ./setup.sh
 
 > ./nvim
+
+
 
