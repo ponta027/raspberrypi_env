@@ -1,6 +1,3 @@
 # sample
 
 
-```plantuml
-Bob ->Alice
-```
