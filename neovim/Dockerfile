@@ -13,6 +13,7 @@ RUN apk update && \
     musl-dev\
     vim \
     neovim \
+    neovim-doc \
     python3-dev \
     py3-pip && \
     rm -rf /var/cache/apk/*
