@@ -4,6 +4,6 @@
 echo "[START]"
 
 
-ln -s ~/git/dotfiles/nvim ${HOME}/.config/nvim
+ln -s ~/work/git/dotfiles/nvim ${HOME}/.config/nvim
 
 echo "[END]"
