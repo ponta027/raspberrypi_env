@@ -1,0 +1,11 @@
+version: '3'
+services:
+  neovim:
+    build: 
+      context: ./
+      args:
+        - user=ponta027
+    container_name: myneovim_ubuntu
+    volumes:
+      - /mnt/chromeos:/mnt/chromeos
+      - /etc/passwd:/etc/passwd
