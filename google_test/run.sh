@@ -1,10 +1,11 @@
 #!/bin/sh
 
+APP_NAME=mytest
 mkdir test/build
 cd test/build
 cmake ..
 make
-./mytest 
+./${APP_NAME}
 
 lcov -d . -c -o coverage.info
 lcov -r coverage.info */googletest/* */c++/* */local/include/gtest/* -o coverageFiltered.info
